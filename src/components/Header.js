@@ -2,10 +2,14 @@ import gasdeli from "../images/gasdeli.png";
 
 function Header() {
   return (
-    <header className="flex justify-between bg-black">
-      <img className="logo" src={gasdeli} alt="logo" />
+    <header className="flex justify-between bg-black w-full">
+      <picture>
+        <a href="/">
+          <img className="w-48 p-2" src={gasdeli} alt="gas deli logo" />
+        </a>
+      </picture>
 
-      <nav className="flex justify-end items-center space-x-4 pr-10">
+      <nav className="flex justify-end items-center space-x-4 pr-10 w-full">
         <a
           href="/"
           className="font-medium text-lg  px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900"

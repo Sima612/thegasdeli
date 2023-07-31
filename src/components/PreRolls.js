@@ -8,68 +8,7 @@ import stiiizy from "../images/stiiizy.png";
 import stiiizyAcai from "../images/stiiizyAcai.png";
 
 function PreRolls() {
-  const preRolls = [
-    {
-      image: cookies,
-      name: "COOKIES 2G PACKWOOD W/ GLASS TIP",
-      price: "$20.00",
-      description: (
-        <>
-          <a href="/pre-rolls/cookies">(Description)</a>
-        </>
-      ),
-    },
-    {
-      image: crooks,
-      name: "CROOKS N EXTRACTS LIVE RESIN PRE-ROLL",
-      price: "$10.00",
-    },
-    {
-      image: nug,
-      name: "EXCLUSIVE TOP SHELF KING NUG PRE-ROLL",
-      price: "$10.00",
-    },
-    {
-      image: lilpuffies,
-      name: "LIL PUFFIES - BABY PRE-ROLLS (INDICA)",
-      price: "$20.00",
-    },
-    {
-      image: lilpuffies,
-      name: "LIL PUFFIES - BABY PRE-ROLLS (HYBRID)",
-      price: "$20.00",
-    },
-    {
-      image: lilpuffies,
-      name: "LIL PUFFIES - BABY PRE-ROLLS (SATIVA)",
-      price: "$20.00",
-    },
-    {
-      image: stiiizy,
-      name: "STIIIZY - 40S MINI BLUNT MULTIPACK THC 40% (HYBRID)",
-      price: "$35.00",
-    },
-    {
-      image: stiiizy,
-      name: "STIIIZY - 40S MINI BLUNT MULTIPACK THC 40% (SATIVA)",
-      price: "$35.00",
-    },
-    {
-      image: stiiizy,
-      name: "STIIIZY - 40S MINI BLUNT MULTIPACK THC 40% (INDICA)",
-      price: "$35.00",
-    },
-    {
-      image: stiiizyAcai,
-      name: "STIIIZY - .5G 40S PRE-ROLL MULTIPACK THC 40% (HYBRID)",
-      price: "$25.00",
-    },
-    {
-      image: stiiizyAcai,
-      name: "STIIIZY - .5G 40S PRE-ROLL MULTIPACK THC 40% (INDICA)",
-      price: "$25.00",
-    },
-  ];
+  const preRolls = [];
   return (
     <>
       <header>
@@ -81,7 +20,7 @@ function PreRolls() {
           <a href="/">Home</a>
           <p className="inline pl-1">/ Pre-Rolls</p>
         </div>
-        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-green-600 w-1/6">
+        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           PRE-ROLLS
         </h1>
         <p className="mt-10 font-medium px-2 py-2 text-slate-900 rounded-lg">
@@ -108,11 +47,6 @@ function PreRolls() {
               </div>
             );
           })}
-        </div>
-        <div className="flex justify-end absolute bottom-5 -right-20">
-          <a href="#top">
-            <i class="fa-regular fa-circle-up fa-bounce fa-2xl text-green-600"></i>
-          </a>
         </div>
       </main>
     </>

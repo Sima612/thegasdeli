@@ -4,25 +4,7 @@ import Header from "./Header";
 import Nav from "./Nav";
 
 function Sativa() {
-  const products = [
-    {
-      image: tropCherry,
-      name: "TROP CHERRY",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "BOTH LOCATIONS",
-      type: "HYBRID",
-    },
-  ];
+  const products = [];
   return (
     <>
       <header>
@@ -37,8 +19,8 @@ function Sativa() {
           </a>
           <p className="inline pl-1">/ Sativa</p>
         </div>
-        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-green-600 w-1/6">
-          INDICA
+        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
+          SATIVA
         </h1>
         <p className="mt-10 font-medium px-2 py-2 text-slate-900 rounded-lg">
           Showing all {products.length} results

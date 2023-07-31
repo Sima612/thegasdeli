@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
       </header>
 
       <main className="container mx-auto">
-        <h2 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-green-600 w-1/6">
+        <h2 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           ABOUT
         </h2>
         <p className="font-medium text-md px-3 text-slate-700">
@@ -40,6 +41,7 @@ function About() {
           * A Current Address .
         </p>
       </main>
+      <Footer />
     </>
   );
 }

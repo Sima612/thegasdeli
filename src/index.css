@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo {
-  height: 90px;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }

@@ -10,108 +10,7 @@ import Header from "./Header";
 import Nav from "./Nav";
 
 function Hybrid() {
-  const products = [
-    {
-      image: boloRuntz,
-      name: "BOLO RUNTZ",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "BOTH LOCATIONS",
-      type: "HYBRID",
-    },
-    {
-      image: tropCherry,
-      name: "TROP CHERRY",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "BOTH LOCATIONS",
-      type: "HYBRID",
-    },
-    {
-      image: hoodCandy,
-      name: "HOOD CANDY",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "BOTH LOCATIONS",
-      type: "HYBRID",
-    },
-    {
-      image: thinMintCookies,
-      name: "THIN MINT COOKIES",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "RIVERSIDE ONLY",
-      type: "HYBRID",
-    },
-    {
-      image: adiosMF,
-      name: "ADIOS MF [SUNGROWN FLOWER]",
-      price: [" 5G @ $25", " 10G @ $50", " 14G @ $70", " 28G @ $140"],
-      location: "RIVERSIDE ONLY",
-      type: "HYBRID",
-    },
-    {
-      image: doubleScoop,
-      name: "DOUBLE SCOOP",
-      price: [
-        " 1G @ $15",
-        " 2G @ $25",
-        " 3G @ $35",
-        " 4G @ $45",
-        " 5G @ $55",
-        " 8G @ $60",
-        " 10G @ $70",
-        " 14G @ $110",
-        " 28G @ $200",
-      ],
-      location: "RIVERSIDE ONLY",
-      type: "HYBRID",
-    },
-
-    {
-      image: chemdawg,
-      name: "CHEMDAWG [SUNGROWN FLOWER]",
-      price: [" 5G @ $25", " 10G @ $50", " 14G @ $70", " 28G @ $140"],
-      location: "RANCHO/ONTARIO ONLY",
-      type: "HYBRID",
-    },
-  ];
+  const products = [];
 
   return (
     <>
@@ -127,7 +26,7 @@ function Hybrid() {
           </a>
           <p className="inline pl-1">/ Hybrid</p>
         </div>
-        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-green-600 w-1/6">
+        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           HYBRID
         </h1>
         <p className="mt-10 font-medium px-2 py-2 text-slate-900 rounded-lg">
@@ -155,11 +54,6 @@ function Hybrid() {
               </div>
             );
           })}
-        </div>
-        <div className="flex justify-end absolute bottom-5 -right-20">
-          <a href="#top">
-            <i class="fa-regular fa-circle-up fa-bounce fa-2xl text-green-600"></i>
-          </a>
         </div>
       </main>
     </>
