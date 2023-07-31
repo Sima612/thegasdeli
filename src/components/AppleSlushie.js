@@ -26,9 +26,9 @@ function AppleSlushie() {
         </div>
         <div className="flex flex-wrap mt-6 justify-between mb-10 w-full">
           <picture className="w-1/2">
-            <img src={stiiizy.image} alt="" />
+            <img className="w-1/2 mx-auto" src={stiiizy.image} alt="" />
           </picture>
-          <section className="px-3 grid w-1/2 align-center content-start">
+          <section className="px-3 grid w-1/2 align-center content-center">
             <div>
               <p className="px-3 text-green-600 text-lg">Lil Stiiizy</p>
               <p className="px-3 text-2xl font-medium tracking-widest">

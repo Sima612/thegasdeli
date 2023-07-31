@@ -26,7 +26,7 @@ function BlueDream() {
         </div>
         <div className="flex flex-wrap mt-6 justify-between mb-10 w-full">
           <picture className="w-1/2">
-            <img src={stiiizy.image} alt="" />
+            <img className="w-2/3 mx-auto" src={stiiizy.image} alt="" />
           </picture>
           <section className="px-3 grid w-1/2 align-center content-center">
             <div>
@@ -69,7 +69,7 @@ function BlueDream() {
                 </div>
                 <div className="pt-5">
                   Disclaimer:
-                  <p>
+                  <p className="pt-3">
                     A spent cannabis cartridge shall be properly disposed of as
                     hazardous waste at a household hazardous waste collection
                     facility or other approved facility.
