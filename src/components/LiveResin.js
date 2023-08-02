@@ -1,25 +1,9 @@
-import plugOGKB from "../images/plugOGKB.png";
-import plugbrr from "../images/plugbrr.png";
-
 import Footer from "./Footer";
 import Header from "./Header";
 import Nav from "./Nav";
 
 function LiveResin() {
-  const resins = [
-    {
-      id: 1,
-      image: plugOGKB,
-      name: "LIVE RESIN LIVEST",
-      price: "$60.00",
-    },
-    {
-      id: 2,
-      image: plugbrr,
-      name: "LIVE RESIN LIVEST",
-      price: "$60.00",
-    },
-  ];
+  const resins = [];
 
   return (
     <>
@@ -27,8 +11,8 @@ function LiveResin() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
           <a href="/">Home</a>
           <a className="pl-1" href="/concentrates">
             / Concentrates

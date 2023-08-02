@@ -1,11 +1,6 @@
 import Header from "./Header";
 import Nav from "./Nav";
-import cookies from "../images/cookies.png";
-import crooks from "../images/crooks.png";
-import nug from "../images/nug.png";
-import lilpuffies from "../images/lilpuffies.png";
-import stiiizy from "../images/stiiizy.png";
-import stiiizyAcai from "../images/stiiizyAcai.png";
+import Footer from "./Footer";
 
 function PreRolls() {
   const preRolls = [];
@@ -15,8 +10,8 @@ function PreRolls() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <p className="inline pl-1">/ Pre-Rolls</p>
         </div>
@@ -49,6 +44,7 @@ function PreRolls() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

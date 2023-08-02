@@ -2,7 +2,7 @@ import dabwoodsBanner from "../images/dabwoodsBanner.png";
 import plugNPlayBanner from "../images/plugNPlayBanner.png";
 import banner from "../images/banner.png";
 
-import { Carousel, autoplayDelay } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
 
 function BannerSlider() {
   return (

@@ -27,6 +27,8 @@ import dabwoodsgeorgiapeach from "../images/dabwoodsgeorgiapeach.png";
 import dabwoodsmagicmelons from "../images/dabwoodsmagicmelons.png";
 import dabwoodspineapplekush from "../images/dabwoodspineapplekush.png";
 import dabwoodssunsettsunami from "../images/dabwoodssunsettsunami.png";
+import plugOGKB from "../images/plugOGKB.png";
+import plugbrr from "../images/plugbrr.png";
 
 function VapePens() {
   const pens = [
@@ -257,6 +259,20 @@ function VapePens() {
       flavor: "SUNSET TSUNAMI",
       price: "$45.00",
     },
+    {
+      id: 30,
+      image: plugOGKB,
+      name: "LIVE RESIN LIVEST",
+      flavor: "OGKB",
+      price: "$60.00",
+    },
+    {
+      id: 31,
+      image: plugbrr,
+      name: "LIVE RESIN LIVEST",
+      flavor: "BRR BERRY",
+      price: "$60.00",
+    },
   ];
 
   return (
@@ -265,8 +281,8 @@ function VapePens() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <p className="inline pl-1">/ Vape Pens</p>
         </div>
@@ -276,14 +292,14 @@ function VapePens() {
         <p className="mt-10 font-medium px-2 py-2 text-slate-900 rounded-lg">
           Showing all {pens.length} results
         </p>
-        <div className="flex flex-wrap gap-9 mt-6 justify-start">
+        <div className="media-second-div flex flex-wrap gap-9 mt-6 justify-start">
           {pens.map((pen) => {
             return (
-              <div className="flex flex-wrap">
-                <div className="w-72 m-0 font-medium text-center px-2 py-2 text-slate-900 rounded-lg">
+              <div className="media-products flex flex-wrap">
+                <div className="media-first-div w-72 m-0 font-medium text-center px-2 py-2 text-slate-900 rounded-lg">
                   <a href={`/vape-pens/lilstiiizy/${pen.id}`}>
                     <img
-                      className="w-64 h-64 mx-auto"
+                      className="media-product-img w-64 h-64 mx-auto"
                       src={pen.image}
                       alt="pictures"
                     />

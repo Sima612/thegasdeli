@@ -11,11 +11,13 @@ function Deals() {
         <Nav />
       </header>
 
-      <main className="container mx-auto relative ...">
+      <main className="media-main container mx-auto relative ...">
         <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           DEALS
         </h1>
-        <img className="mx-auto" src={dailydeals} alt="daily deals" />
+        <div className="deals-image">
+          <img className="mx-auto" src={dailydeals} alt="daily deals" />
+        </div>
         <section>
           <h2 className="font-bold text-lg px-3 py-2 text-slate-700">
             Private Reserve Flower

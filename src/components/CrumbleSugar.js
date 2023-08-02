@@ -24,8 +24,8 @@ function CrumbleSugar() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
           <a href="/">Home</a>
           <a className="pl-1" href="/concentrates">
             / Concentrates

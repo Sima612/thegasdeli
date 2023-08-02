@@ -4,8 +4,6 @@
 // import originsShatter from "../images/originsShatter.png";
 // import a1LiveRisin from "../images/a1LiveRisin.png";
 // import sauce from "../images/sauce.png";
-import plugOGKB from "../images/plugOGKB.png";
-import plugbrr from "../images/plugbrr.png";
 
 import Footer from "./Footer";
 import Header from "./Header";
@@ -20,22 +18,7 @@ function Concentrates() {
     ["SAUCE"],
     ["SHATTER"],
   ];
-  const products = [
-    {
-      id: 1,
-      image: plugOGKB,
-      name: "LIVE RESIN LIVEST",
-      flavor: "OGKB",
-      price: "$60.00",
-    },
-    {
-      id: 2,
-      image: plugbrr,
-      name: "LIVE RESIN LIVEST",
-      flavor: "BRR BERRY",
-      price: "$60.00",
-    },
-  ];
+  const products = [];
 
   return (
     <>
@@ -43,15 +26,15 @@ function Concentrates() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <p className="inline pl-1">/ Concentrates</p>
         </div>
         <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           CONCENTRATES
         </h1>
-        <div className="flex justify-between gap-3 w-4/5 ">
+        <div className="media-flavors flex justify-between gap-3 w-4/5 ">
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
             <a className="px-5 py-1" href="/concentrates/crumble&sugar">
               {options[0]}
@@ -89,11 +72,11 @@ function Concentrates() {
         <div className="flex flex-wrap gap-9 mt-6 justify-start">
           {products.map((product) => {
             return (
-              <div className="flex flex-wrap">
+              <div className="media-products flex flex-wrap">
                 <div className="w-72 m-0 font-medium text-center px-2 py-2 text-slate-900 rounded-lg">
                   <a href={`/concentrates/live-resin/${product.id}`}>
                     <img
-                      className="w-64 h-64 mx-auto"
+                      className="media-product-img w-64 h-64 mx-auto"
                       src={product.image}
                       alt="pictures"
                     />

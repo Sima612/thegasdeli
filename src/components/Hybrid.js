@@ -1,13 +1,6 @@
-import adiosMF from "../images/adiosMF.png";
-import boloRuntz from "../images/boloRuntz.png";
-import doubleScoop from "../images/doubleScoop.png";
-import hoodCandy from "../images/hoodCandy.png";
-import thinMintCookies from "../images/thinMintCookies.png";
-import tropCherry from "../images/tropCherry.png";
-import chemdawg from "../images/chemdawg.png";
-
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Hybrid() {
   const products = [];
@@ -18,8 +11,8 @@ function Hybrid() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <a className="pl-1" href="/flower">
             / Flowers
@@ -56,6 +49,7 @@ function Hybrid() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

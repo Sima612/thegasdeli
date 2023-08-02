@@ -96,17 +96,14 @@ function App() {
         <Route path="/vape-pens/lilstiiizy/27" element={<MagicMelons />} />
         <Route path="/vape-pens/lilstiiizy/28" element={<PineAppleKush />} />
         <Route path="/vape-pens/lilstiiizy/29" element={<SunsetTsunami />} />
+        <Route path="/vape-pens/lilstiiizy/30" element={<PlugResinLivest />} />
+        <Route path="/vape-pens/lilstiiizy/31" element={<BrrBerry />} />
         <Route path="/pre-rolls" element={<PreRolls />} />
         <Route path="/concentrates" element={<Concentrates />} />
         <Route path="/concentrates/1" element={<PlugResinLivest />} />
         <Route path="/concentrates/crumble&sugar" element={<CrumbleSugar />} />
         <Route path="/concentrates/diamonds" element={<Diamonds />} />
         <Route path="/concentrates/live-resin" element={<LiveResin />} />
-        <Route
-          path="/concentrates/live-resin/1"
-          element={<PlugResinLivest />}
-        />
-        <Route path="/concentrates/live-resin/2" element={<BrrBerry />} />
         <Route path="/concentrates/sauce" element={<Sauce />} />
         <Route path="/concentrates/shatter" element={<Shatter />} />
         <Route path="/concentrates/rosin" element={<Rosin />} />

@@ -11,6 +11,7 @@
 
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Flower() {
   const indica = "INDICA";
@@ -24,15 +25,15 @@ function Flower() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <p className="inline pl-1">/ Flower</p>
         </div>
         <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           FLOWERS
         </h1>
-        <div className="flex justify-between w-1/3 ">
+        <div className="media-flavors flex justify-between w-1/3 ">
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
             <a className="px-5 py-1" href="/flower/indica">
               {indica}
@@ -76,6 +77,7 @@ function Flower() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

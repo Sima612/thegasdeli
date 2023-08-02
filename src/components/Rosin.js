@@ -7,37 +7,25 @@ import Nav from "./Nav";
 function Rosin() {
   const rosins = [
     {
+      id: 1,
       image: stiiizyrosin,
       name: "LR ROSIN JAM",
       price: "$40.00",
       flavor: "Diamond Berry",
-      description: (
-        <>
-          <a href="/concentrates/rosin">(DESCRIPTIONS)</a>
-        </>
-      ),
     },
     {
+      id: 2,
       image: stiiizyrosin,
       name: "LR ROSIN JAM",
       price: "$40.00",
       flavor: "Galactic Gas",
-      description: (
-        <>
-          <a href="/concentrates/rosin">(DESCRIPTIONS)</a>
-        </>
-      ),
     },
     {
+      id: 3,
       image: stiiizyrosin,
       name: "LR ROSIN JAM",
       price: "$40.00",
       flavor: "Banana Split",
-      description: (
-        <>
-          <a href="/concentrates/rosin">(DESCRIPTIONS)</a>
-        </>
-      ),
     },
   ];
 
@@ -47,8 +35,8 @@ function Rosin() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/4">
           <a href="/">Home</a>
           <a className="pl-1" href="/concentrates">
             / Concentrates
@@ -64,14 +52,15 @@ function Rosin() {
         <div className="flex flex-wrap gap-9 mt-6 mb-6 justify-start">
           {rosins.map((rosin) => {
             return (
-              <div className="flex flex-wrap">
-                <div className="w-72 m-0 font-medium text-center px-2 py-2 text-slate-900 rounded-lg">
-                  <img
-                    className="w-64 h-64 mx-auto"
-                    src={rosin.image}
-                    alt="pictures"
-                  />
-
+              <div className="media-products flex flex-wrap">
+                <div className="media-first-div w-72 m-0 font-medium text-center px-2 py-2 text-slate-900 rounded-lg">
+                  <a href={`/concentrates/rosin/${rosin.id}`}>
+                    <img
+                      className="media-product-img w-64 h-64 mx-auto"
+                      src={rosin.image}
+                      alt="pictures"
+                    />
+                  </a>
                   <p>
                     <i class="fa-solid fa-cannabis fa-lg"></i> {rosin.name}
                   </p>
@@ -80,9 +69,6 @@ function Rosin() {
                   </p>
                   <p className="font-bold text-lg text-green-600">
                     {rosin.price}
-                  </p>
-                  <p className="bg-slate-200 text-slate-900 font-md text-lg rounded-lg">
-                    {rosin.description}
                   </p>
                 </div>
               </div>

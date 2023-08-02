@@ -1,8 +1,6 @@
-import obiWanOG from "../images/obiWanOG.png";
-import crownOG from "../images/crownOG.png";
-import reserveShake from "../images/reserveShake.png";
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Indica() {
   const products = [];
@@ -12,8 +10,8 @@ function Indica() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
           <a href="/">Home</a>
           <a className="pl-1" href="/flower">
             / Flowers
@@ -50,6 +48,7 @@ function Indica() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }
