@@ -36,7 +36,7 @@ function Contact() {
       </header>
 
       <main className="media-main container mx-auto">
-        <h2 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6 mx-auto">
+        <h2 className="text-2xl text-center mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6 mx-auto">
           CONTACT
         </h2>
         <section className="contact-section w-1/2 max-x-xs mx-auto">

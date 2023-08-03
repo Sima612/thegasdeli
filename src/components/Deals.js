@@ -12,9 +12,9 @@ function Deals() {
       </header>
 
       <main className="media-main container mx-auto relative ...">
-        <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
+        <h2 className="text-2xl text-center mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6 mx-auto">
           DEALS
-        </h1>
+        </h2>
         <div className="deals-image">
           <img className="mx-auto" src={dailydeals} alt="daily deals" />
         </div>

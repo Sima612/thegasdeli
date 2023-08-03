@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Edibles() {
   const options = [["BAKED"], ["GUMMIES"], ["CHOCOLATES"]];
@@ -20,17 +21,17 @@ function Edibles() {
         </h1>
         <div className="media-flavors flex justify-between gap-3 w-1/3 ">
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
-            <a className="px-5 py-1" href="/concentrates/crumble&sugar">
+            <a className="px-5 py-1" href="/edibles/baked">
               {options[0]}
             </a>
           </div>
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
-            <a className="px-5 py-1" href="/concentrates/diamonds">
+            <a className="px-5 py-1" href="/edibles/gummies">
               {options[1]}
             </a>
           </div>
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
-            <a className="px-5 py-1" href="/concentrates/live-resin">
+            <a className="px-5 py-1" href="/edibles/chocolates">
               {options[2]}
             </a>
           </div>
@@ -39,6 +40,7 @@ function Edibles() {
           Showing all results
         </p>
       </main>
+      <Footer />
     </>
   );
 }

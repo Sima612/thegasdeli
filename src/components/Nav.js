@@ -3,7 +3,7 @@ import { useState } from "react";
 function Nav() {
   const [isHovering, setIsHovering] = useState(false);
 
-  const handleMouseOver = (e) => {
+  const handleMouseOver = () => {
     setIsHovering(true);
   };
   const handleMouseOut = () => {
