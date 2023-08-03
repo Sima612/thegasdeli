@@ -36,7 +36,7 @@ function Nav() {
           >
             PRE-ROLLS
             {isHovering && (
-              <ul className="font-bold text-xl px-3 py-2 rounded-lg text-black text-center">
+              <ul className="font-bold text-sm px-3 py-2 rounded-lg text-black text-center">
                 <li className="hover:border-b-4 hover:border-amber-400">
                   <a href="/pre-rolls/regular">Regular</a>
                 </li>
@@ -55,7 +55,7 @@ function Nav() {
           >
             CONCENTRATES
             {isHovering && (
-              <ul className="font-bold text-xl text-black px-3 py-2 rounded-lg">
+              <ul className="font-bold text-sm text-black px-3 py-2 rounded-lg">
                 <li className="hover:border-b-4 hover:border-amber-400">
                   <a href="/concentrates/crumble&sugar">Crumbles/Sugars</a>
                 </li>
@@ -86,7 +86,7 @@ function Nav() {
           >
             EDIBLES
             {isHovering && (
-              <ul className="font-bold text-xl px-3 py-2 rounded-lg text-black">
+              <ul className="font-bold text-sm px-3 py-2 rounded-lg text-black">
                 <li className="hover:border-b-4 hover:border-amber-400">
                   <a href="/edibles/baked">Baked</a>
                 </li>

@@ -18,17 +18,17 @@ function BrrBerry() {
         <Header />
         <Nav />
       </header>
-      <main className="container mx-auto relative ...">
-        <div className="text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/2">
+      <main className="media-main container mx-auto relative ...">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/2">
           <a href="/">Home</a>
           <a href="/concentrates"> / Concentrates</a>
           <p className="inline pl-1"> / {resin.name}</p>
         </div>
         <div className="flex flex-wrap mt-6 justify-between mb-10 w-full">
-          <picture className="mx-auto">
-            <img src={resin.image} alt="live resin" />
+          <picture className="media-second-div">
+            <img className="mx-auto" src={resin.image} alt="live resin" />
           </picture>
-          <section className="px-3 grid w-1/2 align-center content-start">
+          <section className="media-second-div px-3 grid w-1/2 align-center content-start">
             <div>
               <p className="px-3 text-green-600 text-lg">PLUGplay</p>
               <p className="px-3 text-2xl font-medium tracking-widest">
