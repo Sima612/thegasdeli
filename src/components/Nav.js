@@ -29,7 +29,7 @@ function Nav() {
           </a>
 
           <a
-            className="h-1/2 font-bold text-xl text-white px-3 py-2 text-slate-700 rounded-lg hover:bg-white hover:text-black"
+            className="h-1/2 font-bold text-xl text-white px-3 py-2 text-slate-700 rounded-lg hover:bg-white hover:text-black text-center"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             href="/pre-rolls"
@@ -86,7 +86,7 @@ function Nav() {
           >
             EDIBLES
             {isHovering && (
-              <ul className="font-bold text-sm px-3 py-2 rounded-lg text-black">
+              <ul className="font-bold text-sm px-3 py-2 rounded-lg text-black text-center">
                 <li className="hover:border-b-4 hover:border-amber-400">
                   <a href="/edibles/baked">Baked</a>
                 </li>

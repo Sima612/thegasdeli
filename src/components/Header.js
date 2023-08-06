@@ -9,7 +9,7 @@ function Header() {
         </a>
       </picture>
 
-      <nav className="Header-nav flex justify-end items-center w-1/2 gap-4 text-lg">
+      <nav className="Header-nav flex justify-end items-center w-2/3 gap-4 text-lg">
         <a
           href="/"
           className="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900"
@@ -39,6 +39,12 @@ function Header() {
           className="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900"
         >
           About
+        </a>
+        <a
+          href="/upload"
+          className="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >
+          Upload
         </a>
       </nav>
     </header>

@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 
 function PreRolls() {
+  const options = [["Regular"], ["Infused"]];
   const preRolls = [];
   return (
     <>
@@ -18,6 +19,18 @@ function PreRolls() {
         <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           PRE-ROLLS
         </h1>
+        <div className="media-flavors flex justify-between gap-2 w-1/4 ">
+          <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
+            <a className="px-5 py-1" href="/pre-rolls/regular">
+              {options[0]}
+            </a>
+          </div>
+          <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
+            <a className="px-5 py-1" href="/pre-rolls/infused">
+              {options[1]}
+            </a>
+          </div>
+        </div>
         <p className="mt-10 font-medium px-2 py-2 text-slate-900 rounded-lg">
           Showing all {preRolls.length} results
         </p>

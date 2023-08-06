@@ -12,6 +12,7 @@
   .Header {
     height: 10vh;
     border-bottom: solid 3px white;
+    padding: 0;
   }
   .Footer {
     padding: 1em;
@@ -22,9 +23,9 @@
   }
   .Header-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    font-size: 12.5px;
+    font-size: 9.5px;
     gap: 0;
   }
   .Nav-header {
@@ -33,7 +34,7 @@
   .Nav-header nav {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     gap: 0;
   }

@@ -19,7 +19,7 @@ function Edibles() {
         <h1 className="text-2xl text-left mt-10 mb-10 font-bold text-slate-700 border-b-8 border-amber-400 w-1/6">
           EDIBLES
         </h1>
-        <div className="media-flavors flex justify-between gap-3 w-1/3 ">
+        <div className="media-flavors flex justify-between gap-2 w-1/2 ">
           <div className="border-solid border-2 border-slate-300 bg-slate-200 font-medium text-md text-slate-700 hover:bg-white hover:text-green-600 hover:border-green-300">
             <a className="px-5 py-1" href="/edibles/baked">
               {options[0]}

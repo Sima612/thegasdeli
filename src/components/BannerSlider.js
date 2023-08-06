@@ -7,7 +7,7 @@ import { Carousel } from "@material-tailwind/react";
 function BannerSlider() {
   return (
     <>
-      <Carousel>
+      <Carousel autoplay loop>
         <img
           className="h-full w-full object-cover"
           src={dabwoodsBanner}
@@ -16,12 +16,12 @@ function BannerSlider() {
         <img
           className="h-full w-full object-cover"
           src={banner}
-          alt="banner 3"
+          alt="banner 2"
         />
         <img
           className="h-full w-full object-cover"
           src={plugNPlayBanner}
-          alt="banner 2"
+          alt="banner 3"
         />
       </Carousel>
     </>

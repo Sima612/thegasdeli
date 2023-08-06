@@ -1,5 +1,9 @@
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
+import { FileUploader } from "./components/FileUploader";
+import { Preview } from "./components/Preview";
+import { useState } from "react";
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Deals from "./components/Deals";
@@ -49,8 +53,18 @@ import GeorgiaPeach from "./components/GeorgiaPeach";
 import MagicMelons from "./components/MagicMelons";
 import PineAppleKush from "./components/PineAppleKush";
 import SunsetTsunami from "./components/SunsetTsunami";
+import Baked from "./components/Baked";
+import Gummies from "./components/Gummies";
+import Chocolates from "./components/Chocolates";
+import Regular from "./components/Regular";
+import Infused from "./components/Infused";
 
 function App() {
+  const [files, setFiles] = useState([]);
+  const onSuccess = (savedFiles) => {
+    setFiles(savedFiles);
+  };
+
   return (
     <>
       <Routes>
@@ -59,6 +73,10 @@ function App() {
         <Route path="/deliveryzone" element={<DeliveryZone />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route
+          path="/upload"
+          element={<FileUploader onSuccess={onSuccess} imageFiles={files} />}
+        />
         <Route path="/flower" element={<Flower />} />
         <Route path="/flower/indica" element={<Indica />} />
         <Route path="/flower/hybrid" element={<Hybrid />} />
@@ -99,6 +117,8 @@ function App() {
         <Route path="/vape-pens/lilstiiizy/30" element={<PlugResinLivest />} />
         <Route path="/vape-pens/lilstiiizy/31" element={<BrrBerry />} />
         <Route path="/pre-rolls" element={<PreRolls />} />
+        <Route path="/pre-rolls/regular" element={<Regular />} />
+        <Route path="/pre-rolls/infused" element={<Infused />} />
         <Route path="/concentrates" element={<Concentrates />} />
         <Route path="/concentrates/1" element={<PlugResinLivest />} />
         <Route path="/concentrates/crumble&sugar" element={<CrumbleSugar />} />
@@ -108,6 +128,9 @@ function App() {
         <Route path="/concentrates/shatter" element={<Shatter />} />
         <Route path="/concentrates/rosin" element={<Rosin />} />
         <Route path="/edibles" element={<Edibles />} />
+        <Route path="/edibles/baked" element={<Baked />} />
+        <Route path="/edibles/gummies" element={<Gummies />} />
+        <Route path="/edibles/chocolates" element={<Chocolates />} />
       </Routes>
     </>
   );

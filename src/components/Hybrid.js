@@ -12,7 +12,7 @@ function Hybrid() {
         <Nav />
       </header>
       <main className="media-main container mx-auto relative ...">
-        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/6">
+        <div className="media-first-div text-md text-left mt-10 mb-10 font-medium text-slate-400 w-1/5">
           <a href="/">Home</a>
           <a className="pl-1" href="/flower">
             / Flowers
