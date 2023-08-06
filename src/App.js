@@ -1,7 +1,6 @@
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
 import { FileUploader } from "./components/FileUploader";
-import { Preview } from "./components/Preview";
 import { useState } from "react";
 
 import About from "./components/About";
